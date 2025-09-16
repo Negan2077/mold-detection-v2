@@ -1,0 +1,5 @@
+# this drop notebooks from GitHub language stats
+*.ipynb linguist-vendored
+best.pt filter=lfs diff=lfs merge=lfs -text
+*.pt filter=lfs diff=lfs merge=lfs -text
+train/exp9/weights/best.pt filter=lfs diff=lfs merge=lfs -text

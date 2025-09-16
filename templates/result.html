@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Detection Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #fce4ec, #f8bbd0);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            color: #880e4f;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+        img {
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #880e4f;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        nav {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Detection Result</h1>
+    <div class="card">
+        <img src="{{ result_image }}" width="400">
+        <br>
+        <nav>
+            <a href="{{ url_for('upload_file') }}">Home</a>
+            <a href="{{ url_for('blog') }}">About Mold</a>
+            <a href="{{ url_for('faq') }}">FAQ</a>
+            <a href="{{ url_for('about') }}">About</a>
+        </nav>
+    </div>
+</body>
+</html>

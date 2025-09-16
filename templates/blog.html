@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Mold on Food</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            background: #a0a538c5;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px;
+        }
+        h1 {
+            color: #2e7d32;
+        }
+        article {
+            max-width: 700px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        nav {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #2e7d32;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="{{ url_for('upload_file') }}">Home</a>
+        <a href="{{ url_for('blog') }}">About Mold</a>
+        <a href="{{ url_for('faq') }}">FAQ</a>
+        <a href="{{ url_for('about') }}">About</a>
+    </nav>
+
+    <article>
+        <h1>Mold and Its Effect on Food</h1>
+        <p>Mold is a type of fungus that thrives in warm, moist environments. On food, mold often appears as fuzzy spots of green, black, white, or blue. While some molds are harmless, many produce toxins known as <em>mycotoxins</em>, which can pose serious health risks when consumed.</p>
+
+        <p>When mold grows on bread, fruits, or vegetables, it not only alters the taste and texture but may also penetrate deeper than the visible surface. This means cutting away the moldy part may not make the food safe to eat.</p>
+
+        <p>Consuming moldy food can cause allergic reactions, respiratory issues, and food poisoning symptoms such as nausea and diarrhea. Vulnerable populations such as children, pregnant women, and those with weak immune systems are particularly at risk.</p>
+
+        <h2>How to Prevent Mold Growth on Food</h2>
+        <ul>
+            <li>Store food in airtight containers.</li>
+            <li>Refrigerate perishable items promptly.</li>
+            <li>Check expiration dates and consume food before it spoils.</li>
+            <li>Avoid cross-contamination between fresh and spoiled items.</li>
+        </ul>
+
+        <p>When in doubt, remember the food safety rule: <strong>If you see mold, throw it out!</strong></p>
+    </article>
+</body>
+</html>

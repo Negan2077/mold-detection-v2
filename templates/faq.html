@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ - Mold Detection</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f4f6f8; margin: 0; padding: 20px; }
+    .container { max-width: 800px; margin: auto; background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    nav a { margin: 0 10px; text-decoration: none; color: #3498db; font-weight: bold; }
+    h1 { color: #2c3e50; }
+    .faq { margin-top: 20px; }
+    .question { font-weight: bold; margin-top: 15px; }
+    .answer { margin-left: 15px; margin-top: 5px; color: #555; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <a href="{{ url_for('upload_file') }}">Upload</a>
+      <a href="{{ url_for('blog') }}">Blog</a>
+      <a href="{{ url_for('faq') }}">FAQ</a>
+      <a href="{{ url_for('about') }}">About</a>
+    </nav>
+
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="faq">
+      <div class="question">Q: What does this project do?</div>
+      <div class="answer">A: It detects mold in food images using a trained YOLO model.</div>
+
+      <div class="question">Q: How accurate is the detection?</div>
+      <div class="answer">A: Accuracy depends on training data, but YOLO models generally perform well in real-world scenarios.</div>
+
+      <div class="question">Q: Do I need a powerful computer?</div>
+      <div class="answer">A: No, the system can run even on low-spec PCs, although detections will be slower on CPU.</div>
+
+      <div class="question">Q: Can I use this on my phone?</div>
+      <div class="answer">A: Yes, through the web app or an API, you can send images from mobile devices for detection.</div>
+    </div>
+  </div>
+</body>
+</html>
