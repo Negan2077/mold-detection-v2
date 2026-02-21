@@ -1,8 +1,6 @@
 train: /Users/brian/BactoScan/dataset/images/train
-val: /Users/brian/BactoScan/dataset/images/val 
+val: /Users/brian/BactoScan/dataset/images/val
 
 nc: 2
 
-names: ['mold', 'bread']
-
-
+names: ["mold", "bread"]
